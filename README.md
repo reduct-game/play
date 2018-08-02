@@ -1,2 +1,1 @@
-# reduct-web
-Website for the Reduct game
+## Site for deploying the Reduct(-redux) game
