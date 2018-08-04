@@ -9,7 +9,7 @@
         "D": "'circle'"
     },
     "levels": [
-        {
+         {
             "board": [
                 "x => x",
                 "A"
@@ -49,36 +49,6 @@
                 "x => x"
             ],
             "textgoal": "Functions can be dropped into functions.",
-            "globals": {},
-            "syntax": [],
-            "animationScales": {}
-        },
-        {
-            "board": [
-                "1 + 1"
-            ],
-            "goal": [
-                "2"
-            ],
-            "textgoal": "Evaluate the expression ",
-            "globals": {},
-            "syntax": [],
-            "animationScales": {}
-        },
-        {
-            "board": [
-                "B"
-            ],
-            "goal": [
-                "B",
-                "B"
-            ],
-            "textgoal": "Use the toolbox at the bottom of the screen to place two {squares} on the board",
-            "toolbox": [
-                "C",
-                "B",
-                "A"
-            ],
             "globals": {},
             "syntax": [],
             "animationScales": {}
