@@ -25,7 +25,7 @@
             "animationScales": {}, 
             "board": [
                 "(x) => x == 1", 
-                "(y) => 2 == y", 
+                "(number) => 2 == number", 
                 "2"
             ], 
             "globals": {}, 
@@ -43,7 +43,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => 2 == x"
+                "(isTwo) => 2 == isTwo"
             ], 
             "globals": {}, 
             "goal": [
@@ -61,7 +61,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => (y) => x == y", 
+                "(thing1) => (thing2) => thing1 == thing2", 
                 "x => xx", 
                 "1", 
                 "2", 
@@ -106,8 +106,8 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => x ? 'triangle' : 'rect'", 
-                "(x) => x ? 'rect' : 'star'"
+                "(truth) => truth ? 'triangle' : 'rect'", 
+                "(trueOrFalse) => trueOrFalse ? 'rect' : 'star'"
             ], 
             "globals": {}, 
             "goal": [
@@ -125,7 +125,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => x == _ ? 4 : x"
+                "(z) => z == _ ? 4 : z"
             ], 
             "globals": {}, 
             "goal": [
@@ -160,7 +160,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => (y) => x == y ? 1 : 2", 
+                "(thing1) => (thing2) => thing1 == thing2 ? 1 : 2", 
                 "x => xx"
             ], 
             "globals": {}, 
@@ -180,7 +180,7 @@
             "animationScales": {}, 
             "board": [
                 "(x) => xx", 
-                "(x) => (y) => x == y"
+                "(one_object) => (anotherObject) => one_object == anotherObject"
             ], 
             "globals": {}, 
             "goal": [

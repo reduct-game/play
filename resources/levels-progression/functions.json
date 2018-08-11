@@ -20,9 +20,9 @@
         {
             "animationScales": {}, 
             "board": [
+                "object => object", 
                 "x => x", 
-                "x => x", 
-                "x => x", 
+                "something => something", 
                 "A"
             ], 
             "globals": {}, 
@@ -38,13 +38,13 @@
         {
             "animationScales": {}, 
             "board": [
-                "x => x", 
-                "x => x", 
-                "x => x"
+                "Function => Function", 
+                "object => object", 
+                "a => a"
             ], 
             "globals": {}, 
             "goal": [
-                "x => x"
+                "a => a"
             ], 
             "syntax": [], 
             "textgoal": "The input to a function can be another function"
@@ -117,8 +117,8 @@
             "animationScales": {}, 
             "board": [
                 "x => x", 
-                "x => A", 
-                "x => B"
+                "dontCare => A", 
+                "whatever => B"
             ], 
             "globals": {}, 
             "goal": [
@@ -138,7 +138,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => x + 1"
+                "(number) => number + 1"
             ], 
             "globals": {}, 
             "goal": [
@@ -155,14 +155,15 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => x + 3", 
-                "(y) => y + 1"
+                "(number) => number + 3", 
+                "(i) => i + 1"
             ], 
             "globals": {}, 
             "goal": [
                 "8"
             ], 
             "syntax": [], 
+            "textgoal": "Hint: you can\u2019t add a function to a number", 
             "toolbox": [
                 "2", 
                 "3", 

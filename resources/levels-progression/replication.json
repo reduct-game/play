@@ -6,7 +6,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "x => _"
+                "object => _"
             ], 
             "globals": {}, 
             "goal": [
@@ -40,8 +40,8 @@
         {
             "animationScales": {}, 
             "board": [
-                "x => _", 
-                "y => _", 
+                "something => _", 
+                "something_else => _", 
                 "A", 
                 "B", 
                 "C"
@@ -95,7 +95,7 @@
             "animationScales": {}, 
             "board": [
                 "x => xx", 
-                "x => x", 
+                "something => something", 
                 "A"
             ], 
             "globals": {}, 
@@ -156,15 +156,15 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "x => x + 1", 
-                "x => x - 1"
+                "number => number + 1", 
+                "k => k - 1"
             ]
         }, 
         {
             "animationScales": {}, 
             "board": [
                 "(x) => xx", 
-                "(x) => _ + x"
+                "(number) => _ + number"
             ], 
             "globals": {}, 
             "goal": [
@@ -192,8 +192,8 @@
             "syntax": [], 
             "textgoal": "Choose your functions wisely", 
             "toolbox": [
-                "(x) => x + 1", 
-                "(x) => x + 2", 
+                "(m) => m + 1", 
+                "(z) => z + 2", 
                 "6", 
                 "7", 
                 "8"
@@ -210,6 +210,7 @@
                 "8"
             ], 
             "syntax": [], 
+            "textgoal": "Hint: what function should you duplicate?", 
             "toolbox": [
                 "x", 
                 "0", 

@@ -7,7 +7,7 @@
             "animationScales": {}, 
             "board": [
                 "function isTriangle(x) { return x == 'triangle'; }", 
-                "__tests(f('triangle'), f('rect'))"
+                "__tests(testMe('triangle'), testMe('rect'))"
             ], 
             "defines": [
                 "function isTriangle(x) { return x == 'triangle'; }"
@@ -26,7 +26,7 @@
             "animationScales": {}, 
             "board": [
                 "function isStar(x) { return _; }", 
-                "__tests(f('star'), f('rect'), f('star'))"
+                "__tests(testMe('star'), testMe('rect'), testMe('star'))"
             ], 
             "defines": [
                 "function isStar(x) { return x == 'star'; }"
@@ -52,7 +52,7 @@
             "board": [
                 "__argumentAnnotated; function isZero(x) { return _; }", 
                 "_ == _", 
-                "__tests(f(1), f(0), f(3), f(0))"
+                "__tests(testMe(1), testMe(0), testMe(3), testMe(0))"
             ], 
             "defines": [
                 "function isZero(x) { return x == 0; }"
@@ -82,7 +82,7 @@
                 "__argumentAnnotated; function equals(x, y) { return _; }", 
                 "_ == _", 
                 "(y) => _", 
-                "__tests(f(1, 2), f(2, 2), f(3, 3))"
+                "__tests(testMe(1, 2), testMe(2, 2), testMe(3, 3))"
             ], 
             "defines": [
                 "function equals(x, y) { return x == y; }"
@@ -109,7 +109,7 @@
             "board": [
                 "function noStar(x) { return _ ? 'rect' : x; }", 
                 "x == _", 
-                "__tests(f('rect') == 'rect', f('star') == 'rect', f('triangle') == 'triangle')"
+                "__tests(testMe('rect') == 'rect', testMe('star') == 'rect', testMe('triangle') == 'triangle')"
             ], 
             "defines": [
                 "function noStar(x) { return x == 'star' ? 'rect' : x; }"
@@ -135,7 +135,7 @@
                 "__argumentAnnotated; function alwaysOne(x) { return _; }", 
                 "_ ? x : 1", 
                 "(x) => _", 
-                "__tests(f(1) == 1, f(2) == 1, f(3) == 1)"
+                "__tests(testMe(1) == 1, testMe(2) == 1, testMe(3) == 1)"
             ], 
             "defines": [
                 "function alwaysOne(x) { return x == 1 ? x : 1; }"
@@ -162,7 +162,7 @@
             "board": [
                 "function firstNonZero(x, y) { return _; }", 
                 "_ ? _ : x", 
-                "__tests(f(1, 2) == 1, f(0, 1) == 1, f(2, 0) == 2, f(3, 2) == 3)"
+                "__tests(testMe(1, 2) == 1, testMe(0, 1) == 1, testMe(2, 0) == 2, testMe(3, 2) == 3)"
             ], 
             "defines": [
                 "function firstNonZero(x, y) { return x == 0 ? x : y; }"
@@ -184,40 +184,6 @@
                 "x", 
                 "y", 
                 "__unlimited; _(_)"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function nextDayOfWeek(x) { return _; }", 
-                "_ ? _ : _", 
-                "__tests(f(2) == 3, f(7) == 1, f(5) == 6)"
-            ], 
-            "defines": [
-                "function nextDayOfWeek(x) { return x == 7 ? 1 : addOne(x); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "true", 
-                "true", 
-                "true"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that outputs the next day of the week in number, given the the current day x", 
-            "toolbox": [
-                "__unlimited; addOne;", 
-                "__unlimited; addTwo;", 
-                "__unlimited; nextDayOfWeek;", 
-                "x == _", 
-                "__unlimited; _(_)", 
-                "1", 
-                "2", 
-                "3", 
-                "4", 
-                "5", 
-                "6", 
-                "7", 
-                "x"
             ]
         }
     ], 

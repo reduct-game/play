@@ -8,7 +8,10 @@
             "board": [
                 "3"
             ], 
-            "globals": {}, 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
             "goal": [
                 "9"
             ], 
@@ -24,9 +27,12 @@
         {
             "animationScales": {}, 
             "board": [
-                "__tests(f(3), f(4), f(7))"
+                "__tests(testMe(3), testMe(4), testMe(7))"
             ], 
-            "globals": {}, 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
             "goal": [
                 "10", 
                 "11", 
@@ -46,12 +52,15 @@
             "animationScales": {}, 
             "board": [
                 "function addEight(x) { return _; }", 
-                "__tests(f(1), f(4), f(7))"
+                "__tests(testMe(1), testMe(4), testMe(7))"
             ], 
             "defines": [
                 "function addEight(x) { return addTogether(8, x); }"
             ], 
-            "globals": {}, 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
             "goal": [
                 "9", 
                 "12", 
@@ -73,31 +82,34 @@
         {
             "animationScales": {}, 
             "board": [
-                "function multiplyByTwo(a) { return _; }", 
-                "__tests(f(2), f(3), f(5))"
+                "function multiplyBySix(a) { return _; }", 
+                "__tests(testMe(2), testMe(3), testMe(5))"
             ], 
             "defines": [
-                "function multiplyByTwo(a) { return repeat(a, addTogether(2), 0); }"
+                "function multiplyBySix(a) { return repeat(a, addTogether(2), 0); }"
             ], 
-            "globals": {}, 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
             "goal": [
-                "4", 
-                "6", 
-                "10"
+                "12", 
+                "18", 
+                "30"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that multiplies a by 2", 
+            "textgoal": "Define a function that multiplies a by 6", 
             "toolbox": [
-                "multiplyByTwo", 
+                "__unlimited;_(_)", 
                 "repeat", 
                 "a", 
-                "addTwo", 
-                "addOne", 
+                "addTogether", 
                 "0", 
-                "1", 
-                "2", 
-                "3", 
-                "__unlimited;_(_)"
+                "5", 
+                "6", 
+                "7", 
+                "8", 
+                "multiplyBySix"
             ]
         }, 
         {
@@ -106,25 +118,51 @@
                 "function multiplyTogether(a, b) { return _; }", 
                 "a", 
                 "b", 
-                "__tests(f(1, 3), f(2, 4), f(3, 3))"
+                "__tests(testMe(1, 3), testMe(2, 4), testMe(3, 3))"
             ], 
-            "defines": [
-                "function multiplyTogether(a, b) { return repeat(a, addTogether(b), 0); }"
-            ], 
-            "globals": {}, 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
             "goal": [
                 "3", 
                 "8", 
                 "9"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that computs the multiplication of a and b", 
+            "textgoal": "Define a function that computes the multiplication of a and b", 
             "toolbox": [
-                "multiplyTogether", 
+                "__unlimited; _(_)", 
                 "addTogether", 
                 "repeat", 
                 "0", 
-                "__unlimited; _(_)"
+                "multiplyTogether"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "function multiplyTogether(a, b) { return _; }", 
+                "a", 
+                "b", 
+                "__tests(testMe(54, 65), testMe(23, 87))"
+            ], 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
+            "goal": [
+                "3510", 
+                "2001"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define a function that computes the multiplication of a and b", 
+            "toolbox": [
+                "__unlimited; _(_)", 
+                "addTogether", 
+                "repeat", 
+                "0", 
+                "multiplyTogether"
             ]
         }
     ], 

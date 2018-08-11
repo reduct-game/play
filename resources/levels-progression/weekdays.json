@@ -26,7 +26,7 @@
             "board": [
                 "function isSameDay(x, y) { return _; }", 
                 "_ == _", 
-                "__tests(f(sat, sat) == true, f(mon, tue) == false)"
+                "__tests(testMe(sat, sat) == true, testMe(mon, tue) == false)"
             ], 
             "globals": {}, 
             "goal": [
@@ -46,50 +46,8 @@
         {
             "animationScales": {}, 
             "board": [
-                "tomorrow(_)", 
-                "yesterday(_)"
-            ], 
-            "defines": [
-                "function tomorrow(x) { return x == mon ? tue : (x == tue ? wed : (x == wed ? thu : (x == thu ? fri : (x == fri ? sat : (x == sat ? sun : mon))))); }", 
-                "function yesterday(x) { return x == mon ? sun : (x == tue ? mon : (x == wed ? tue : (x == thu ? wed : (x == fri ? thu : (x == sat ? fri : sat))))); }"
-            ], 
-            "globals": {
-                "tomorrow": "function tomorrow(x) { return x == mon ? tue : (x == tue ? wed : (x == wed ? thu : (x == thu ? fri : (x == fri ? sat : (x == sat ? sun : mon))))); }", 
-                "yesterday": "function yesterday(x) { return x == mon ? sun : (x == tue ? mon : (x == wed ? tue : (x == thu ? wed : (x == fri ? thu : (x == sat ? fri : sat))))); }"
-            }, 
-            "goal": [
-                "tue", 
-                "tue"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "mon", 
-                "wed", 
-                "tue", 
-                "thu"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "(x) => yesterday(x) == _ ? 2 : 1"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "2"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "tue", 
-                "sun", 
-                "mon"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
                 "function isMonday(x) {return _; }", 
-                "__tests(f(mon), f(tue))"
+                "__tests(testMe(mon), testMe(tue))"
             ], 
             "defines": [
                 "function isMonday(x) { return x == mon }"
@@ -112,7 +70,7 @@
             "animationScales": {}, 
             "board": [
                 "function isFriday(x) {return _; }", 
-                "__tests(f(mon), f(fri))"
+                "__tests(testMe(mon), testMe(fri))"
             ], 
             "defines": [
                 "function isFriday(x) { return x == fri }"
@@ -140,7 +98,7 @@
                 "function isMondayOrFriday(x) {return _; }", 
                 "isMonday(_) ? _ : _", 
                 "x", 
-                "__tests(f(mon), f(tue), f(fri), f(sun))"
+                "__tests(testMe(mon), testMe(tue), testMe(fri), testMe(sun))"
             ], 
             "globals": {}, 
             "goal": [
@@ -168,7 +126,7 @@
                 "function isWeekend(x) {return _; }", 
                 "_ ? _ : _", 
                 "x == _", 
-                "__tests(f(sat), f(tue), f(mon), f(sun))"
+                "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
             ], 
             "defines": [
                 "function isWeekend(x) { return x == sat ? true : x == sun }"
@@ -199,7 +157,7 @@
             "board": [
                 "function isWeekday(x) {return _; }", 
                 "_ ? _ : _", 
-                "__tests(f(sat), f(tue), f(mon), f(sun))"
+                "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
             ], 
             "defines": [
                 "function isWeekday(x) { return isWeekend(x) ? false : true }"
@@ -224,6 +182,76 @@
                 "x", 
                 "_ == _", 
                 "__unlimited; isWeekday;"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "function tomorrow(day) {return _;}", 
+                "{ day == mon ? tue : (day == tue ? wed : (day == wed ? thu : (day == thu ? fri : (day == fri ? sat : (day == sat ? sun : mon))))); }"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "tue", 
+                "sun"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define the function tomorrow to compute the next day of any given day", 
+            "toolbox": [
+                "mon", 
+                "wed", 
+                "tue", 
+                "thu", 
+                "sat", 
+                "__unlimited; tomorrow;"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "function yesterday(day) {return _;}", 
+                "day == mon ? sun : (day == tue ? mon : (day == wed ? tue : (day == thu ? wed : (day == fri ? thu : (day == sat ? fri : sat))))); }"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "tue", 
+                "sun"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define the function tomorrow to compute the previous day of any given day", 
+            "toolbox": [
+                "mon", 
+                "wed", 
+                "tue", 
+                "thu", 
+                "sat", 
+                "__unlimited; yesterday;"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "tomorrow(_)", 
+                "yesterday(_)"
+            ], 
+            "defines": [
+                "function tomorrow(x) { return x == mon ? tue : (x == tue ? wed : (x == wed ? thu : (x == thu ? fri : (x == fri ? sat : (x == sat ? sun : mon))))); }", 
+                "function yesterday(x) { return x == mon ? sun : (x == tue ? mon : (x == wed ? tue : (x == thu ? wed : (x == fri ? thu : (x == sat ? fri : sat))))); }"
+            ], 
+            "globals": {
+                "tomorrow": "function tomorrow(x) { return x == mon ? tue : (x == tue ? wed : (x == wed ? thu : (x == thu ? fri : (x == fri ? sat : (x == sat ? sun : mon))))); }", 
+                "yesterday": "function yesterday(x) { return x == mon ? sun : (x == tue ? mon : (x == wed ? tue : (x == thu ? wed : (x == fri ? thu : (x == sat ? fri : sat))))); }"
+            }, 
+            "goal": [
+                "tue", 
+                "tue"
+            ], 
+            "syntax": [], 
+            "toolbox": [
+                "mon", 
+                "wed", 
+                "tue", 
+                "thu"
             ]
         }
     ], 

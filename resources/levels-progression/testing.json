@@ -6,49 +6,8 @@
         {
             "animationScales": {}, 
             "board": [
-                "_(3)", 
-                "_(8)", 
-                "addOne(_)"
-            ], 
-            "fade": {}, 
-            "globals": {}, 
-            "goal": [
-                "4", 
-                "8"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "__unlimited;addOne;", 
-                "__unlimited;doNothing;"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "_(addOne(4))", 
-                "_(_(1))", 
-                "addOne(_(10))"
-            ], 
-            "fade": {}, 
-            "globals": {}, 
-            "goal": [
-                "2", 
-                "6", 
-                "11"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "addOne", 
-                "addOne", 
-                "doNothing", 
-                "doNothing"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
                 "x => C", 
-                "__tests(f(A), f(B))"
+                "__tests(testMe(A), testMe(B))"
             ], 
             "fade": {}, 
             "globals": {}, 
@@ -61,7 +20,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "__tests(f(A), f(C))"
+                "__tests(testMe(A), testMe(C))"
             ], 
             "fade": {}, 
             "globals": {}, 
@@ -79,7 +38,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "__tests(f(2), f(6))"
+                "__tests(testMe(2), testMe(6))"
             ], 
             "fade": {}, 
             "globals": {}, 
@@ -97,7 +56,7 @@
             "board": [
                 "function starify(x) { return A; }", 
                 "function squarify(x) { return B; }", 
-                "__tests(f(C), f(B))"
+                "__tests(testMe(C), testMe(B))"
             ], 
             "fade": {}, 
             "globals": {}, 
@@ -115,7 +74,7 @@
             "animationScales": {}, 
             "board": [
                 "__argumentAnnotated; function threeify(x) { return _; }", 
-                "__tests(f(1), f(2), f(3))"
+                "__tests(testMe(1),testMe(2),testMe(3))"
             ], 
             "defines": [
                 "function threeify(x) { return 3; }"
@@ -141,7 +100,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "__tests(f(2), f(3), f(1))"
+                "__tests(testMe(2), testMe(3), testMe(1))"
             ], 
             "fade": {}, 
             "globals": {}, 
@@ -161,7 +120,7 @@
             "animationScales": {}, 
             "board": [
                 "function addThree(x) { return _; }", 
-                "__tests(f(2), f(6))", 
+                "__tests(testMe(2), testMe(6))", 
                 "x"
             ], 
             "defines": [

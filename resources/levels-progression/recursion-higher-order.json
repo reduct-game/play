@@ -6,414 +6,53 @@
         {
             "animationScales": {}, 
             "board": [
-                "function twice(f, x) { return _; }", 
-                "twice(addOne, 2)", 
-                "twice(addTwo, 3)", 
-                "twice(doNothing, 1)"
-            ], 
-            "defines": [
-                "function twice(f, x) { return f(f(x)); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "4", 
-                "7", 
-                "1"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that applies f twice on x", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "twice", 
-                "f", 
-                "f", 
-                "x", 
-                "x"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function thrice(f, x) { return _; }", 
-                "thrice(addTwo, 1)", 
-                "thrice(addFour, 3)", 
-                "thrice(addSix, 2)"
-            ], 
-            "defines": [
-                "function thrice(f, x) { return f(twice(f, x)); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "7", 
-                "15", 
-                "20"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that applies f three times on x", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "twice", 
-                "thrice", 
-                "f", 
-                "f", 
-                "x", 
-                "x"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function double(y) { return _; }", 
-                "_ ? 0 : 2 + _", 
-                "double(_)", 
-                "double(1)", 
-                "double(0)", 
-                "double(3)"
-            ], 
-            "defines": [
-                "function double(y) { return y == 0 ? 0 : 2 + double(y - 1); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "2", 
-                "0", 
-                "6"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes y times 2", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "y", 
-                "y - 1", 
-                "y + 1", 
-                "0", 
-                "1", 
-                "2", 
-                "_ == _"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function triple(z) { return _; }", 
-                "_ == _", 
-                "_ ? 0 : _", 
-                "triple(0)", 
-                "triple(2)", 
-                "triple(1)", 
-                "x"
-            ], 
-            "defines": [
-                "function triple(z) { return z == 0 ? 0 : 3 + triple(z - 1); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "0", 
-                "6", 
-                "3"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes z times 3", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "3 + _", 
-                "2 + _", 
-                "triple", 
-                "triple", 
-                "_ - _", 
-                "0", 
-                "1", 
-                "2", 
-                "4", 
-                "x"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function multiplyBy4(x) { return _; }", 
-                "_ ? 0 : _", 
+                "function myRepeat(num, func, value){ return num == 1 ? _ : func(myRepeat(_, func));}", 
                 "_ - 1", 
-                "_ + _", 
-                "multiplyBy4(1)", 
-                "multiplyBy4(4)", 
-                "multiplyBy4(2)", 
-                "multiplyBy4"
-            ], 
-            "defines": [
-                "function multiplyBy4(x) { return x == 0 ? 0 : 4 + multiplyBy4(x - 1); }"
+                "num", 
+                "value", 
+                "value", 
+                "__tests((3,addOne, 3), (3,addOne, 8), (3,addOne,6))", 
+                "func"
             ], 
             "globals": {}, 
             "goal": [
-                "4", 
-                "16", 
-                "8"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes x times 4", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "__targetable; multiplyBy4", 
-                "_ == _", 
-                "0", 
-                "1", 
-                "2", 
-                "3", 
-                "4", 
-                "5", 
-                "x", 
-                "x"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function xTimes4PlusY(x, y) { return _; }", 
-                "_ + _", 
-                "_ == _", 
-                "_ ? y : _", 
-                "xTimes4PlusY(1, 1)", 
-                "xTimes4PlusY(4, 0)", 
-                "xTimes4PlusY(2, 3)"
-            ], 
-            "defines": [
-                "function xTimes4PlusY(x, y) { return x == 0 ? y : x + xTimes4PlusY(x - 1, y); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "5", 
-                "16", 
+                "6", 
+                "9", 
                 "11"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that computes x times 4 plus y (x*4+2)", 
+            "textgoal": "Define your own repeat!", 
             "toolbox": [
                 "__unlimited; _(_)", 
-                "__targetable; xTimes4PlusY", 
-                "x", 
-                "y", 
-                "0", 
-                "1", 
-                "2", 
-                "3", 
-                "4", 
-                "_ - 1", 
-                "x"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function xTimes5PlusY(x, y) { return _; }", 
-                "_ + _", 
-                "_ - 1", 
-                "_ ? _ : _", 
-                "xTimes5PlusY(1, 2)", 
-                "xTimes5PlusY(2, 3)", 
-                "xTimes5PlusY(1, 0)"
-            ], 
-            "defines": [
-                "function xTimes5PlusY(x, y) { return x == 0 ? y : x + xTimes5PlusY(x - 1, y); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "7", 
-                "13", 
-                "5"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes x times 5 plus y (x*5+2)", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "__targetable; xTimes5PlusY", 
-                "x", 
-                "x", 
-                "y", 
-                "y", 
-                "0", 
-                "1", 
-                "3", 
-                "5", 
-                "_ == _"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function repeatAdd1(x,n) { return _; }", 
-                "_ ? n : addOne(_)", 
-                "_ == 0", 
-                "repeatAdd1(0, 5)", 
-                "repeatAdd1(1, 5)", 
-                "repeatAdd1(0, 3)"
-            ], 
-            "defines": [
-                "function repeatAdd1(x, n) { return x == 0 ? n : addOne(repeatAdd1(x - 1, n)); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "5", 
-                "6", 
-                "3"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function to repeat the function addOne x times on the number n", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "repeatAdd1(x, n)", 
-                "repeatAdd1(x - 1, n)", 
-                "repeatAdd1(x, n-1)", 
-                "x", 
-                "n"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function repeatAdd2(x, n) { return _; }", 
-                "_ ? _ : addTwo(_)", 
-                "repeatAdd2(_, _)", 
-                "0", 
-                "repeatAdd2(0, 5)", 
-                "repeatAdd2(2, 3)", 
-                "repeatAdd2(1, 2)"
-            ], 
-            "defines": [
-                "function repeatAdd2(x, n) { return x == 0 ? n : addTwo(repeatAdd2(x - 1, n)); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "10", 
-                "7", 
-                "4"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function to repeat the function addTwo x times on the number n", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "repeatAdd2", 
-                "_ == _", 
-                "x - 1", 
-                "n - 1", 
-                "x - 2", 
-                "n - 2", 
-                "n", 
-                "n", 
-                "x"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function repeatAdd3(x, n) { return _; }", 
-                "_ ? _ : _(_)", 
-                "addThree", 
-                "repeatAdd3(0, 1)", 
-                "repeatAdd3(2, 2)", 
-                "repeatAdd3(1, 3)"
-            ], 
-            "defines": [
-                "function repeatAdd3(x, n) { return x == 0 ? n : addThree(repeatAdd3(x - 1, n)); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "6", 
-                "8", 
+                "myRepeat", 
                 "1"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function to repeat the function addThree x times on the number n", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "__targetable; repeatAdd3", 
-                "_ == _", 
-                "_ - 1", 
-                "_ - 2", 
-                "0", 
-                "1", 
-                "2", 
-                "3", 
-                "x", 
-                "x", 
-                "n", 
-                "n"
             ]
         }, 
         {
             "animationScales": {}, 
             "board": [
-                "function repeatAddA(x, n, a) { return _; }", 
+                "function myRepeat(num, func, value){ return _;}", 
+                "_ == _", 
+                "_ - _", 
                 "_ ? _ : _", 
-                "repeatAddA(_, _, _)", 
-                "repeatAddA(0, 5, 1)", 
-                "repeatAddA(1, 5, 2)", 
-                "repeatAddA(3, 1, 3)"
-            ], 
-            "defines": [
-                "function repeatAddA(x, n, a) { return x == 0 ? n : a + repeatAddA(x - 1, n, a); }"
+                "__tests((3, addOne, 6), (3, addOne, 12), (3, addOne, 22))", 
+                "myRepeat"
             ], 
             "globals": {}, 
             "goal": [
-                "5", 
-                "10", 
-                "7"
+                "9", 
+                "15", 
+                "25"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function to add a to n for x times (a * x + n)", 
+            "textgoal": "Define your own repeat!", 
             "toolbox": [
                 "__unlimited; _(_)", 
-                "__targetable; repeatAddA", 
-                "_ == _", 
-                "_ + _", 
-                "_ - _", 
-                "x", 
-                "x", 
-                "n", 
-                "n", 
-                "a", 
-                "a", 
-                "0", 
-                "1", 
-                "2", 
-                "3"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function repeatFunction(x, n, f) { return _; }", 
-                "_ ? _ : _", 
-                "repeatFunction(5, 0, addOne)", 
-                "repeatFunction(5, 0, addTwo)", 
-                "repeatFunction(3, 1, addOne)", 
-                "repeatFunction(3, 1, addTwo)"
-            ], 
-            "defines": [
-                "function repeatFunction(x, n, f) { return x == 0 ? n : f(repeatFunction(x - 1, n, f)); }"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "5", 
-                "10", 
-                "4", 
-                "7"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function to apply the function f for x times on the input n", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "__targetable; repeatFunction", 
-                "_ == _", 
-                "_ - _", 
-                "0", 
-                "1", 
-                "2", 
-                "x", 
-                "x", 
-                "n", 
-                "n", 
-                "f", 
-                "f"
+                "__unlimited; myRepeat", 
+                "__unlimited; func", 
+                "__unlimited; 1", 
+                "__unlimited; num", 
+                "__unlimited; value"
             ]
         }
     ], 

@@ -8,7 +8,7 @@
                 "expr-apply": 1.5
             }, 
             "board": [
-                "(x => x)(1)"
+                "(number => number)(1)"
             ], 
             "globals": {}, 
             "goal": [
@@ -49,9 +49,9 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "x => x + 1", 
-                "x => x + 2", 
-                "x => x"
+                "num => num+ 1", 
+                "num => num + 2", 
+                "object => object"
             ]
         }, 
         {
@@ -112,9 +112,9 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "x => x + _", 
-                "x => x + 2", 
-                "x => x + 3", 
+                "number => number + _", 
+                "k => k + 2", 
+                "y => y + 3", 
                 "x => x"
             ]
         }

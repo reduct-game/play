@@ -17,8 +17,7 @@
             "textgoal": "Make me {a star}!", 
             "toolbox": [
                 "star"
-            ], 
-            "tutorialUrl": "resources/videos/defn-intro.mp4"
+            ]
         }, 
         {
             "animationScales": {}, 
@@ -82,7 +81,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function trianglify(x) { return _; }", 
+                "function trianglify(object) { return _; }", 
                 "A", 
                 "D", 
                 "C"
@@ -125,7 +124,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function addOne(x) { return _; }", 
+                "function addOne(number) { return _; }", 
                 "2", 
                 "4"
             ], 
@@ -142,7 +141,7 @@
             "textgoal": "Define a function that computes x plus 1", 
             "toolbox": [
                 "__unlimited;addOne", 
-                "x", 
+                "number", 
                 "_ + 1"
             ]
         }, 
@@ -238,105 +237,42 @@
         {
             "animationScales": {}, 
             "board": [
-                "function first(left, right) { return left; }", 
-                "__tests(f(3, 6), f(7, 3), f(_, _))"
+                "_(3)", 
+                "_(8)", 
+                "addOne(_)"
             ], 
             "fade": {}, 
             "globals": {}, 
             "goal": [
-                "3", 
-                "7", 
-                "9"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that outputs the first input", 
-            "toolbox": [
-                "first", 
-                "8", 
-                "9", 
-                "10"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function second(left, right) { return _; }", 
-                "__tests(f(_, _), f(_, 8))"
-            ], 
-            "fade": {}, 
-            "globals": {}, 
-            "goal": [
-                "5", 
+                "4", 
                 "8"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that outputs the second input", 
             "toolbox": [
-                "left", 
-                "right", 
-                "second", 
-                "1", 
-                "2", 
-                "3", 
-                "4", 
-                "5"
+                "__unlimited;addOne;", 
+                "__unlimited;doNothing;"
             ]
         }, 
         {
             "animationScales": {}, 
             "board": [
-                "function secondPlusOne(a, b) { return _; }", 
-                "__tests(f(1, 6), f(_, _), f(_, _))", 
-                "addOne(_)"
+                "_(addOne(4))", 
+                "_(_(1))", 
+                "addOne(_(10))"
             ], 
             "fade": {}, 
             "globals": {}, 
             "goal": [
                 "2", 
                 "6", 
-                "7"
+                "11"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that adds 1 to the second input", 
             "toolbox": [
-                "secondPlusOne", 
-                "a", 
-                "b", 
-                "5", 
-                "1", 
-                "3", 
-                "8"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function firstPlusTwo(left, right) { return _; }", 
-                "__tests(f(_, _), f(_, _), f(7, 9))", 
-                "2", 
-                "3", 
-                "4", 
-                "5"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "triple": "function triple(x) { return (repeat(x, addTwo))(x); }", 
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "4", 
-                "7", 
-                "9"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that adds 2 to the first input", 
-            "toolbox": [
-                "firstPlusTwo", 
                 "addOne", 
-                "addTwo", 
-                "left", 
-                "right", 
-                "_(_)"
+                "addOne", 
+                "doNothing", 
+                "doNothing"
             ]
         }
     ], 
