@@ -83,7 +83,8 @@
             "goal": [
                 "3"
             ], 
-            "syntax": []
+            "syntax": [], 
+            "tutorialUrl": "resources/videos/conditional.mp4"
         }, 
         {
             "animationScales": {}, 
