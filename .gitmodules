@@ -1,0 +1,3 @@
+[submodule "reduct-redux"]
+	path = reduct-redux
+	url = https://github.coecis.cornell.edu/Reduct/reduct-redux.git
