@@ -104,7 +104,7 @@
                 "10"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that outputs the difference between x and 10", 
+            "textgoal": "Define a function that outputs the difference between two numbers", 
             "toolbox": [
                 "difference", 
                 "_ + 1", 

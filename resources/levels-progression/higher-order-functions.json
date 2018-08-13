@@ -117,7 +117,7 @@
                 "13"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that computes x plus 2", 
+            "textgoal": "Use twice to define a function that computes x plus 2", 
             "toolbox": [
                 "__unlimited; _(_)", 
                 "addTwo", 

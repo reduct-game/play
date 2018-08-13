@@ -26,12 +26,12 @@
             "board": [
                 "function isSameDay(x, y) { return _; }", 
                 "_ == _", 
-                "__tests(testMe(sat, sat) == true, testMe(mon, tue) == false)"
+                "__tests(testMe(sat, sat), testMe(mon, tue))"
             ], 
             "globals": {}, 
             "goal": [
                 "true", 
-                "true"
+                "false"
             ], 
             "syntax": [], 
             "textgoal": "Define a function that outputs true if the x and y are the same weekday, otherwise false", 
@@ -210,7 +210,7 @@
             "animationScales": {}, 
             "board": [
                 "function yesterday(day) {return _;}", 
-                "day == mon ? sun : (day == tue ? mon : (day == wed ? tue : (day == thu ? wed : (day == fri ? thu : (day == sat ? fri : sat))))); }"
+                "{day == mon ? sun : (day == tue ? mon : (day == wed ? tue : (day == thu ? wed : (day == fri ? thu : (day == sat ? fri : sat))))); }"
             ], 
             "globals": {}, 
             "goal": [
@@ -218,7 +218,7 @@
                 "sun"
             ], 
             "syntax": [], 
-            "textgoal": "Define the function tomorrow to compute the previous day of any given day", 
+            "textgoal": "Define the function yesterday to compute the previous day of any given day", 
             "toolbox": [
                 "mon", 
                 "wed", 

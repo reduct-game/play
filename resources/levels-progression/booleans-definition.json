@@ -107,23 +107,20 @@
         {
             "animationScales": {}, 
             "board": [
-                "function noStar(x) { return _ ? 'rect' : x; }", 
+                "function starIs1(x) { return _ ? 1 : 0; }", 
                 "x == _", 
-                "__tests(testMe('rect') == 'rect', testMe('star') == 'rect', testMe('triangle') == 'triangle')"
-            ], 
-            "defines": [
-                "function noStar(x) { return x == 'star' ? 'rect' : x; }"
+                "__tests(testMe('rect'), testMe('star'), testMe('triangle'))"
             ], 
             "globals": {}, 
             "goal": [
-                "true", 
-                "true", 
-                "true"
+                "0", 
+                "1", 
+                "0"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that outputs anything but {a star}", 
+            "textgoal": "Define a function that outputs 1 if x is {a star}", 
             "toolbox": [
-                "__unlimited; noStar;", 
+                "__unlimited; starIs1;", 
                 "'star'", 
                 "'rect'", 
                 "'triangle'"
@@ -135,16 +132,16 @@
                 "__argumentAnnotated; function alwaysOne(x) { return _; }", 
                 "_ ? x : 1", 
                 "(x) => _", 
-                "__tests(testMe(1) == 1, testMe(2) == 1, testMe(3) == 1)"
+                "__tests(testMe(1), testMe(2), testMe(3))"
             ], 
             "defines": [
                 "function alwaysOne(x) { return x == 1 ? x : 1; }"
             ], 
             "globals": {}, 
             "goal": [
-                "true", 
-                "true", 
-                "true"
+                "1", 
+                "1", 
+                "1"
             ], 
             "syntax": [], 
             "textgoal": "Define a function that always outputs 1", 
@@ -162,17 +159,17 @@
             "board": [
                 "function firstNonZero(x, y) { return _; }", 
                 "_ ? _ : x", 
-                "__tests(testMe(1, 2) == 1, testMe(0, 1) == 1, testMe(2, 0) == 2, testMe(3, 2) == 3)"
+                "__tests(testMe(1, 2), testMe(0, 1), testMe(2, 0), testMe(3, 2))"
             ], 
             "defines": [
                 "function firstNonZero(x, y) { return x == 0 ? x : y; }"
             ], 
             "globals": {}, 
             "goal": [
-                "true", 
-                "true", 
-                "true", 
-                "true"
+                "1", 
+                "1", 
+                "2", 
+                "3"
             ], 
             "syntax": [], 
             "textgoal": "Define a function that outputs the first non zero value of x and y. ", 
