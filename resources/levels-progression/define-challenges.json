@@ -145,15 +145,15 @@
                 "function multiplyTogether(a, b) { return _; }", 
                 "a", 
                 "b", 
-                "__tests(testMe(14, 25), testMe(23, 13))"
+                "__tests(testMe(9, 7), testMe(12, 3))"
             ], 
             "fade": {}, 
             "globals": {
                 "twice": "function twice(f) { return (x) => f(f(x)); }"
             }, 
             "goal": [
-                "350", 
-                "299"
+                "63", 
+                "36"
             ], 
             "syntax": [], 
             "textgoal": "Define a function that computes the multiplication of a and b", 

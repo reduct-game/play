@@ -78,8 +78,7 @@
             "textgoal": "Define a function that outputs {a triangle}", 
             "toolbox": [
                 "__unlimited;triangle"
-            ], 
-            "tutorialUrl": "This is not a function (no parameter)"
+            ]
         }, 
         {
             "animationScales": {}, 
@@ -99,8 +98,7 @@
             "textgoal": "Define a function that takes an input and outputs {a triangle}", 
             "toolbox": [
                 "__unlimited;trianglify"
-            ], 
-            "tutorialUrl": "65: need to a x for the square."
+            ]
         }, 
         {
             "animationScales": {}, 

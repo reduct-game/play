@@ -43,7 +43,8 @@
         {
             "animationScales": {}, 
             "board": [
-                "(isTwo) => 2 == isTwo"
+                "(isTwo) => 2 == isTwo", 
+                "(x) => xx"
             ], 
             "globals": {}, 
             "goal": [
@@ -52,7 +53,6 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "(x) => xx", 
                 "2", 
                 "3", 
                 "2"
@@ -180,8 +180,8 @@
         {
             "animationScales": {}, 
             "board": [
-                "(x) => xx", 
-                "(one_object) => (anotherObject) => one_object == anotherObject"
+                "(oneThing) => (anotherThing) => oneThing== anotherThing", 
+                "(x) => xx"
             ], 
             "globals": {}, 
             "goal": [
