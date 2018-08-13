@@ -42,7 +42,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "(parameter) => (dontCare) => parameter + 1", 
+                "(number) => (dontCare) => number + 1", 
                 "(dontCare) => (number) => number + 3"
             ], 
             "globals": {}, 
