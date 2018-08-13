@@ -2,15 +2,21 @@
 
 source="reduct-redux"
 
+for d in "../reduct-redux" "$HOME/reduct-redux"
+do
+    if [[ ! -d "$source/.git" ]]
+    then
+        source="$d"
+    fi
+done
+
 if [[ ! -d "$source/.git" ]]
 then
-  git submodule update --init
-  if [[ $? = 1 || ! -d "$source/.git" ]]
-  then
-    echo "Can't find reduct-redux directory to read from"
-    exit 1
-  fi
+  echo "Can't find reduct-redux directory to read from"
+  exit 1
 fi
+
+echo "Building from $source"
 
 (
     cd "$source"
