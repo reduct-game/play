@@ -79,6 +79,30 @@
         {
             "animationScales": {}, 
             "board": [
+                "function add(x,y) { return (_ + _); }", 
+                "x"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "6", 
+                "9"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define a function that adds two numbers", 
+            "toolbox": [
+                "0", 
+                "1", 
+                "2", 
+                "4", 
+                "8", 
+                "x", 
+                "y", 
+                "__unlimited; add;"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
                 "function equals(x, y) { return _; }", 
                 "_ == _", 
                 "__tests(testMe(1, 2), testMe(2, 2), testMe(3, 3))", 
