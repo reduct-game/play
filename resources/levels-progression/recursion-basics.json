@@ -6,6 +6,67 @@
         {
             "animationScales": {}, 
             "board": [
+                "5", 
+                "function countDown(n) { return n == 0 ? n : countDown(n-1); }"
+            ], 
+            "defines": [
+                "function countDown(n) { return n == 0 ? n : countDown(n-1); }"
+            ], 
+            "fade": {}, 
+            "globals": {}, 
+            "goal": [
+                "0"
+            ], 
+            "syntax": [], 
+            "textgoal": "This function uses recursion", 
+            "toolbox": [
+                "countDown"
+            ], 
+            "tutorialUrl": "resources/videos/recursion.mp4"
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "function countUpTo(x, n) { return x == _ ? x : countUpTo(x + 1, n); }"
+            ], 
+            "fade": {}, 
+            "globals": {}, 
+            "goal": [
+                "5"
+            ], 
+            "syntax": [], 
+            "textgoal": "Here is another recursive function", 
+            "toolbox": [
+                "countUpTo", 
+                "10", 
+                "5", 
+                "1", 
+                "n"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "function countUpTo(x, n) { return x == _ ? x : countUpTo(_, _); }", 
+                "8", 
+                "5"
+            ], 
+            "fade": {}, 
+            "globals": {}, 
+            "goal": [
+                "10", 
+                "10"
+            ], 
+            "syntax": [], 
+            "toolbox": [
+                "__unlimited; countUpTo(_, 10)", 
+                "x + 1", 
+                "__unlimited; n"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
                 "function countAboveFive(num){ return num == 5 ? _ : countAboveFive(_)  + 1;}", 
                 "0", 
                 "_ - 1", 
