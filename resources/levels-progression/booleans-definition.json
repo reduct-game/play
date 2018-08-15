@@ -79,10 +79,33 @@
         {
             "animationScales": {}, 
             "board": [
+                "function equals(x, y) { return _; }", 
+                "_ == _", 
+                "__tests(testMe(1, 2), testMe(2, 2), testMe(3, 3))", 
+                "y", 
+                "x"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "false", 
+                "true", 
+                "true"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define a function that outputs true if x and y are equal, otherwise false", 
+            "toolbox": [
+                "__unlimited; equals;", 
+                "0", 
+                "1"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
                 "__argumentAnnotated; function equals(x, y) { return _; }", 
                 "_ == _", 
                 "(y) => _", 
-                "__tests(testMe(1, 2), testMe(2, 2), testMe(3, 3))"
+                "__tests(testMe(3, 4), testMe(5, 5), testMe(4, 3))"
             ], 
             "defines": [
                 "function equals(x, y) { return x == y; }"
@@ -91,7 +114,7 @@
             "goal": [
                 "false", 
                 "true", 
-                "true"
+                "false"
             ], 
             "syntax": [], 
             "textgoal": "Define a function that outputs true if x and y are equal, otherwise false", 
@@ -129,10 +152,11 @@
         {
             "animationScales": {}, 
             "board": [
-                "__argumentAnnotated; function alwaysOne(x) { return _; }", 
+                "function alwaysOne(x) { return _; }", 
                 "_ ? x : 1", 
-                "(x) => _", 
-                "__tests(testMe(1), testMe(2), testMe(3))"
+                "__tests(testMe(1), testMe(2), testMe(3))", 
+                "1 == _", 
+                "x"
             ], 
             "defines": [
                 "function alwaysOne(x) { return x == 1 ? x : 1; }"
@@ -147,9 +171,7 @@
             "textgoal": "Define a function that always outputs 1", 
             "toolbox": [
                 "__unlimited; alwaysOne;", 
-                "x", 
                 "_ == _", 
-                "1 == _", 
                 "2", 
                 "3"
             ]
@@ -172,7 +194,7 @@
                 "3"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that outputs the first non zero value of x and y. ", 
+            "textgoal": "Define a function that outputs x if it is non zero and y otherwise ", 
             "toolbox": [
                 "__unlimited;isZero;", 
                 "__unlimited; firstNonZero; ", 

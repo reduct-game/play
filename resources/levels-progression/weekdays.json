@@ -95,8 +95,34 @@
         {
             "animationScales": {}, 
             "board": [
+                "function isMondayOrFriday(x) {return isMonday(_) ? true : _ ; }", 
+                "x", 
+                "isFriday(_)", 
+                "__tests(testMe(mon), testMe(tue), testMe(fri), testMe(sun))"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "true", 
+                "true", 
+                "false", 
+                "false"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define a function that outputs true if x is Monday or Friday, otherwise false", 
+            "toolbox": [
+                "mon", 
+                "tue", 
+                "true", 
+                "false", 
+                "x", 
+                "__unlimited; isMondayOrFriday;"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
                 "function isMondayOrFriday(x) {return _; }", 
-                "isMonday(_) ? _ : _", 
+                "isFriday(_) ? _ : _", 
                 "x", 
                 "__tests(testMe(mon), testMe(tue), testMe(fri), testMe(sun))"
             ], 
@@ -155,12 +181,35 @@
         {
             "animationScales": {}, 
             "board": [
+                "function isWeekday(x) {return isWeekend ? false : _; }", 
+                "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "false", 
+                "true", 
+                "true", 
+                "false"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define a function that outputs true if x is one of the weekdays, otherwise false", 
+            "toolbox": [
+                "isWeekend", 
+                "sat", 
+                "sun", 
+                "mon", 
+                "tue", 
+                "true", 
+                "false", 
+                "x"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
                 "function isWeekday(x) {return _; }", 
                 "_ ? _ : _", 
                 "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
-            ], 
-            "defines": [
-                "function isWeekday(x) { return isWeekend(x) ? false : true }"
             ], 
             "globals": {}, 
             "goal": [
