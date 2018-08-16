@@ -86,9 +86,6 @@
                 "a", 
                 "__tests(testMe(8), testMe(6), testMe(5))"
             ], 
-            "defines": [
-                "function multiplyBySix(a) { return repeat(a, addTogether(2), 0); }"
-            ], 
             "fade": {}, 
             "globals": {
                 "twice": "function twice(f) { return (x) => f(f(x)); }"
