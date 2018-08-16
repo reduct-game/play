@@ -80,6 +80,7 @@
         {
             "animationScales": {}, 
             "board": [
+                "__unlimited; _(_)", 
                 "twice(addOne)"
             ], 
             "fade": {}, 
@@ -90,8 +91,8 @@
                 "7"
             ], 
             "syntax": [], 
+            "textgoal": "Use the apply block to generate the goal!", 
             "toolbox": [
-                "__unlimited; _(_)", 
                 "3", 
                 "4", 
                 "5", 
@@ -101,6 +102,7 @@
         {
             "animationScales": {}, 
             "board": [
+                "__unlimited; _(_)", 
                 "twice(_)"
             ], 
             "fade": {}, 
@@ -112,7 +114,6 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "__unlimited; _(_)", 
                 "addOne", 
                 "addThree", 
                 "1", 
@@ -126,7 +127,7 @@
                 "twice", 
                 "x", 
                 "function addTwo(x) { return _; }", 
-                "__tests(TestMe(3), TestMe(7), TestMe(11))"
+                "__tests(testMe(3), testMe(7), testMe(11))"
             ], 
             "defines": [
                 "function addTwo(x) { return (twice(addOne))(x); }"
@@ -154,7 +155,7 @@
                 "twice", 
                 "x", 
                 "function addFour(x) { return _; }", 
-                "__tests(TestMe(1), TestMe(TestMe(5)))"
+                "__tests(testMe(1), testMe(testMe(5)))"
             ], 
             "defines": [
                 "function addFour(x) { return (twice(addTwo))(x); }", 
@@ -248,7 +249,7 @@
                 "repeat(_, _)", 
                 "x", 
                 "function addSix(x) { return _; }", 
-                "__tests(TestMe(5), TestMe(9))"
+                "__tests(testMe(5), testMe(9))"
             ], 
             "defines": [
                 "function addSix(x) { return (repeat(3, addTwo))(x); }"
@@ -276,7 +277,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "__tests(TestMe(_), TestMe(_))"
+                "__tests(testMe(_), testMe(_))"
             ], 
             "fade": {}, 
             "globals": {
@@ -302,7 +303,7 @@
             "animationScales": {}, 
             "board": [
                 "function addTogether(a, b) { return repeat(_,addOne)( _ ); }", 
-                "__tests(TestMe(_, _), TestMe(_, _), TestMe(1, 2))", 
+                "__tests(testMe(_, _), testMe(_, _), testMe(1, 2))", 
                 "a", 
                 "b"
             ], 
@@ -333,7 +334,7 @@
             "animationScales": {}, 
             "board": [
                 "function addTogether(a, b) { return _; }", 
-                "__tests(TestMe(_, _), TestMe(_, _), TestMe(1, 2))", 
+                "__tests(testMe(_, _), testMe(_, _), testMe(1, 2))", 
                 "repeat(_)", 
                 "a", 
                 "b", 

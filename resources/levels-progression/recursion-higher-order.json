@@ -11,7 +11,8 @@
                 "num", 
                 "value", 
                 "value", 
-                "__tests(testMe(3,addOne, 3), testMe(3,addOne, 8), testMe(3,addOne,6))"
+                "__tests(testMe(3,addOne, 3), testMe(3,addOne, 8), testMe(3,addOne,6))", 
+                "func"
             ], 
             "globals": {}, 
             "goal": [

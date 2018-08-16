@@ -82,8 +82,40 @@
         {
             "animationScales": {}, 
             "board": [
+                "function multiplyByFour(a) { return repeat(4, (x => addTogether(_, x)))(0); }", 
+                "a", 
+                "__tests(testMe(8), testMe(6), testMe(5))"
+            ], 
+            "defines": [
+                "function multiplyBySix(a) { return repeat(a, addTogether(2), 0); }"
+            ], 
+            "fade": {}, 
+            "globals": {
+                "twice": "function twice(f) { return (x) => f(f(x)); }"
+            }, 
+            "goal": [
+                "32", 
+                "24", 
+                "20"
+            ], 
+            "syntax": [], 
+            "textgoal": "Using Repeat, define a function that multiplies a number by 4", 
+            "toolbox": [
+                "__unlimited;_(_)", 
+                "0", 
+                "5", 
+                "6", 
+                "7", 
+                "8", 
+                "multiplyByFour"
+            ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
                 "function multiplyBySix(a) { return _; }", 
-                "__tests(testMe(2), testMe(3), testMe(5))"
+                "__tests(testMe(2), testMe(3), testMe(5))", 
+                "_(0)"
             ], 
             "defines": [
                 "function multiplyBySix(a) { return repeat(a, addTogether(2), 0); }"
@@ -98,7 +130,7 @@
                 "30"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that multiplies a number by 6", 
+            "textgoal": "Using Repeat, define a function that multiplies a number by 6", 
             "toolbox": [
                 "__unlimited;_(_)", 
                 "repeat", 
@@ -115,7 +147,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function multiplyTogether(a, b) { return _; }", 
+                "function multiplyTogether(a, b) { return repeat(_, (x => addTogether(_, x)))(0); }", 
                 "a", 
                 "b", 
                 "__tests(testMe(1, 3), testMe(2, 4), testMe(3, 3))"

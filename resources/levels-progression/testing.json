@@ -135,6 +135,7 @@
             "syntax": [], 
             "textgoal": "Define a function that computes x plus 3", 
             "toolbox": [
+                "__unlimited; _(_)", 
                 "__unlimited; addThree", 
                 "addOne", 
                 "addOne", 
