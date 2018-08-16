@@ -56,7 +56,7 @@
                 "A"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function which always output a {star}", 
+            "textgoal": "Define a function which always outputs a {star}", 
             "toolbox": [
                 "__unlimited;makeStar"
             ]
@@ -75,9 +75,9 @@
                 "C"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that outputs {a triangle}", 
+            "textgoal": "Define the name \"triangle\" to be {a triangle}", 
             "toolbox": [
-                "__unlimited;triangle"
+                "__unlimited; triangle"
             ]
         }, 
         {
