@@ -11,14 +11,14 @@
                 "num", 
                 "value", 
                 "value", 
-                "__tests(testMe(3,addOne, 3), testMe(3,addOne, 8), testMe(3,addOne,6))", 
+                "__tests(testMe(3,addOne, 3), testMe(3,addOne, 8), testMe(4,addOne,9))", 
                 "func"
             ], 
             "globals": {}, 
             "goal": [
                 "6", 
                 "9", 
-                "11"
+                "13"
             ], 
             "syntax": [], 
             "textgoal": "Define your own repeat!", 
@@ -35,14 +35,14 @@
                 "_ == _", 
                 "_ - _", 
                 "_ ? _ : _", 
-                "__tests(testMe(3, addOne, 6), testMe(3, addOne, 12), testMe(3, addOne, 22))", 
+                "__tests(testMe(2, addOne, 6), testMe(3, addOne, 12), testMe(4, addOne, 22))", 
                 "myRepeat"
             ], 
             "globals": {}, 
             "goal": [
-                "9", 
+                "8", 
                 "15", 
-                "25"
+                "26"
             ], 
             "syntax": [], 
             "textgoal": "Define your own repeat!", 

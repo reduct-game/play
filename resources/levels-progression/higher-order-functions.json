@@ -30,7 +30,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function threeTime(func, number){ return _(_(_(_)));}", 
+                "function threeTimes(func, number){ return _(_(_(_)));}", 
                 "number"
             ], 
             "fade": {}, 
@@ -43,7 +43,7 @@
             "toolbox": [
                 "__unlimited; addThree", 
                 "__unlimited; func", 
-                "threeTime", 
+                "threeTimes", 
                 "3", 
                 "4", 
                 "5", 
@@ -125,8 +125,8 @@
             "animationScales": {}, 
             "board": [
                 "twice", 
-                "x", 
-                "function addTwo(x) { return _; }", 
+                "y", 
+                "function addTwo(y) { return _; }", 
                 "__tests(testMe(3), testMe(7), testMe(11))"
             ], 
             "defines": [
@@ -153,8 +153,8 @@
             "animationScales": {}, 
             "board": [
                 "twice", 
-                "x", 
-                "function addFour(x) { return _; }", 
+                "z", 
+                "function addFour(z) { return _; }", 
                 "__tests(testMe(1), testMe(testMe(5)))"
             ], 
             "defines": [
