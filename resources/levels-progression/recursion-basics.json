@@ -9,20 +9,38 @@
                 "5", 
                 "function countDown(n) { return n == 0 ? n : countDown(n-1); }"
             ], 
-            "defines": [
-                "function countDown(n) { return n == 0 ? n : countDown(n-1); }"
-            ], 
             "fade": {}, 
             "globals": {}, 
             "goal": [
                 "0"
             ], 
             "syntax": [], 
-            "textgoal": "This function uses recursion", 
+            "textgoal": "This function uses recursion to count down to 0", 
             "toolbox": [
                 "countDown"
             ], 
             "tutorialUrl": "resources/videos/recursion.mp4"
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "5", 
+                "function countDown(n) { return n == _ ? n : countDown(_ - 1); }", 
+                "n"
+            ], 
+            "fade": {}, 
+            "globals": {}, 
+            "goal": [
+                "1"
+            ], 
+            "syntax": [], 
+            "textgoal": "Define a function that counts down to 1", 
+            "toolbox": [
+                "countDown", 
+                "3", 
+                "1", 
+                "n"
+            ]
         }, 
         {
             "animationScales": {}, 
@@ -35,7 +53,7 @@
                 "5"
             ], 
             "syntax": [], 
-            "textgoal": "Here is another recursive function", 
+            "textgoal": "We can use recursion to count up too.", 
             "toolbox": [
                 "countUpTo", 
                 "10", 
