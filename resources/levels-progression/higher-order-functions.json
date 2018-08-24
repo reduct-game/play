@@ -302,13 +302,13 @@
         {
             "animationScales": {}, 
             "board": [
-                "function addTogether(a, b) { return repeat(_,addOne)( _ ); }", 
+                "function add(a, b) { return repeat(_,addOne)( _ ); }", 
                 "__tests(testMe(_, _), testMe(_, _), testMe(1, 2))", 
                 "a", 
                 "b"
             ], 
             "defines": [
-                "function addTogether(a, b) { return repeat(a, addOne)(b); }"
+                "function add(a, b) { return repeat(a, addOne)(b); }"
             ], 
             "fade": {}, 
             "globals": {
@@ -323,7 +323,7 @@
             "textgoal": "Define a function that computes a plus b", 
             "toolbox": [
                 "__unlimited; _(_)", 
-                "addTogether", 
+                "add", 
                 "2", 
                 "3", 
                 "5", 
@@ -333,7 +333,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function addTogether(a, b) { return _; }", 
+                "function add(a, b) { return _; }", 
                 "__tests(testMe(_, _), testMe(_, _), testMe(1, 2))", 
                 "repeat(_)", 
                 "a", 
@@ -341,7 +341,7 @@
                 "addOne"
             ], 
             "defines": [
-                "function addTogether(a, b) { return repeat(a, addOne)(b); }"
+                "function add(a, b) { return repeat(a, addOne)(b); }"
             ], 
             "fade": {}, 
             "globals": {
@@ -356,7 +356,7 @@
             "textgoal": "Define a function that computes a plus b", 
             "toolbox": [
                 "__unlimited; _(_)", 
-                "addTogether", 
+                "add", 
                 "2", 
                 "3", 
                 "5", 

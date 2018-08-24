@@ -17,7 +17,7 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "addTogether", 
+                "add", 
                 "3", 
                 "4", 
                 "5", 
@@ -40,7 +40,7 @@
             ], 
             "syntax": [], 
             "toolbox": [
-                "addTogether", 
+                "add", 
                 "__unlimited; _(_)", 
                 "5", 
                 "6", 
@@ -55,7 +55,7 @@
                 "__tests(testMe(1), testMe(4), testMe(7))"
             ], 
             "defines": [
-                "function addEight(x) { return addTogether(8, x); }"
+                "function addEight(x) { return add(8, x); }"
             ], 
             "fade": {}, 
             "globals": {
@@ -70,7 +70,7 @@
             "textgoal": "Define a function that outputs x plus 8", 
             "toolbox": [
                 "addEight", 
-                "addTogether", 
+                "add", 
                 "5", 
                 "6", 
                 "7", 
@@ -82,7 +82,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function multiplyByFour(a) { return repeat(4, (x => addTogether(_, x)))(0); }", 
+                "function multiplyByFour(a) { return repeat(4, (x => add(_, x)))(0); }", 
                 "a", 
                 "__tests(testMe(8), testMe(6), testMe(5))"
             ], 
@@ -115,7 +115,7 @@
                 "_(0)"
             ], 
             "defines": [
-                "function multiplyBySix(a) { return repeat(a, addTogether(2), 0); }"
+                "function multiplyBySix(a) { return repeat(a, add(2), 0); }"
             ], 
             "fade": {}, 
             "globals": {
@@ -132,7 +132,7 @@
                 "__unlimited;_(_)", 
                 "repeat", 
                 "a", 
-                "addTogether", 
+                "add", 
                 "0", 
                 "5", 
                 "6", 
@@ -144,7 +144,7 @@
         {
             "animationScales": {}, 
             "board": [
-                "function multiplyTogether(a, b) { return repeat(_, (x => addTogether(_, x)))(0); }", 
+                "function multiplyTogether(a, b) { return repeat(_, (x => add(_, x)))(0); }", 
                 "a", 
                 "b", 
                 "__tests(testMe(1, 3), testMe(2, 4), testMe(3, 3))"
@@ -162,7 +162,7 @@
             "textgoal": "Define a function that computes the multiplication of a and b", 
             "toolbox": [
                 "__unlimited; _(_)", 
-                "addTogether", 
+                "add", 
                 "repeat", 
                 "0", 
                 "multiplyTogether"
@@ -188,7 +188,7 @@
             "textgoal": "Define a function that computes the multiplication of a and b", 
             "toolbox": [
                 "__unlimited; _(_)", 
-                "addTogether", 
+                "add", 
                 "repeat", 
                 "0", 
                 "multiplyTogether"
