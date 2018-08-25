@@ -1,366 +1,84 @@
 {
-    "chapterName": "Higher Order Functions", 
-    "description": "Introduction to twice, apply, and repeat", 
+    "chapterName": "Arrays", 
+    "description": "Arrays can hold many things.", 
     "language": "JavaScript", 
     "levels": [
         {
             "animationScales": {}, 
             "board": [
-                "function addTwo(number){ return _;}", 
-                "number", 
-                "_(_)", 
-                "_(_)"
+                "[_, _, _]"
             ], 
-            "fade": {}, 
             "globals": {}, 
             "goal": [
-                "7"
+                "[A, B, C]"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function to add 2 to a number.", 
+            "textgoal": "Make an array with three elements", 
             "toolbox": [
-                "__unlimited; addOne", 
-                "addTwo", 
-                "3", 
-                "4", 
-                "5", 
-                "6"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function threeTimes(func, number){ return _(_(_(_)));}", 
-                "number"
-            ], 
-            "fade": {}, 
-            "globals": {}, 
-            "goal": [
-                "18"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function to use a function 3 times in a row.", 
-            "toolbox": [
-                "__unlimited; addThree", 
-                "__unlimited; func", 
-                "threeTimes", 
-                "3", 
-                "4", 
-                "5", 
-                "9", 
-                "10"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function twice(func, number){ return _;}", 
-                "number", 
-                "_(_)", 
-                "_(_)"
-            ], 
-            "fade": {}, 
-            "globals": {}, 
-            "goal": [
-                "16"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function to use a function 2 times in a row.", 
-            "toolbox": [
-                "__unlimited; addThree", 
-                "__unlimited; func", 
-                "twice", 
-                "3", 
-                "4", 
-                "5", 
-                "6", 
-                "10"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "__unlimited; _(_)", 
-                "twice(addOne)"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "7"
-            ], 
-            "syntax": [], 
-            "textgoal": "Use the apply block to generate the goal!", 
-            "toolbox": [
-                "3", 
-                "4", 
-                "5", 
-                "6"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "__unlimited; _(_)", 
-                "twice(_)"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "7"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "addOne", 
-                "addThree", 
-                "1", 
-                "5", 
+                "A", 
+                "B", 
+                "C", 
+                "D", 
                 "9"
             ]
         }, 
         {
             "animationScales": {}, 
             "board": [
-                "twice", 
-                "y", 
-                "function addTwo(y) { return _; }", 
-                "__tests(testMe(3), testMe(7), testMe(11))"
+                "get", 
+                "[A, B, _, D]"
             ], 
-            "defines": [
-                "function addTwo(x) { return (twice(addOne))(x); }"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
+            "globals": {}, 
             "goal": [
-                "5", 
-                "9", 
-                "13"
+                "C"
             ], 
             "syntax": [], 
-            "textgoal": "Use twice to define a function that computes x plus 2", 
+            "textgoal": "\"get\" can get an element from an array", 
             "toolbox": [
-                "__unlimited; _(_)", 
-                "addTwo", 
-                "addOne"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "twice", 
-                "z", 
-                "function addFour(z) { return _; }", 
-                "__tests(testMe(1), testMe(testMe(5)))"
-            ], 
-            "defines": [
-                "function addFour(x) { return (twice(addTwo))(x); }", 
-                "function repeat(n, f) { return (x) => n == 0 ? x : repeat(n - 1, f)(f(x)); }"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "5", 
-                "13"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes x plus 4", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "addFour", 
-                "addTwo"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "repeat(2, addOne)"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "5"
-            ], 
-            "syntax": [], 
-            "textgoal": "The repeat function lets you use the same function many times!", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "1", 
-                "2", 
-                "3", 
-                "4"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "repeat(_, addOne)"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "11"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "3", 
-                "4", 
-                "5", 
-                "6"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "repeat(3, _)"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "8"
-            ], 
-            "syntax": [], 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "doNothing", 
-                "addOne", 
-                "addTwo", 
                 "0", 
                 "1", 
-                "2"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "repeat(_, _)", 
-                "x", 
-                "function addSix(x) { return _; }", 
-                "__tests(testMe(5), testMe(9))"
-            ], 
-            "defines": [
-                "function addSix(x) { return (repeat(3, addTwo))(x); }"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "11", 
-                "15"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes x plus 6", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "addSix", 
-                "addThree", 
-                "addTwo", 
-                "1", 
+                "2", 
                 "3", 
-                "5"
+                "4", 
+                "C"
             ]
         }, 
         {
             "animationScales": {}, 
             "board": [
-                "__tests(testMe(_), testMe(_))"
+                "map(addOne, [1, _, 4])"
             ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
+            "globals": {}, 
             "goal": [
-                "9", 
-                "12"
+                "[2, 4, 5]"
             ], 
             "syntax": [], 
+            "textgoal": "\"map\" applies a function to every element", 
             "toolbox": [
-                "__unlimited; _(_)", 
-                "addSix", 
                 "1", 
                 "2", 
                 "3", 
                 "4", 
-                "5", 
-                "6"
+                "B"
             ]
         }, 
         {
             "animationScales": {}, 
             "board": [
-                "function add(a, b) { return repeat(_,addOne)( _ ); }", 
-                "__tests(testMe(_, _), testMe(_, _), testMe(1, 2))", 
-                "a", 
-                "b"
+                "map(_, [1, 2, 4, 8])"
             ], 
-            "defines": [
-                "function add(a, b) { return repeat(a, addOne)(b); }"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
+            "globals": {}, 
             "goal": [
-                "3", 
-                "8", 
-                "9"
+                "[2, 4, 8, 16]"
             ], 
             "syntax": [], 
-            "textgoal": "Define a function that computes a plus b", 
             "toolbox": [
-                "__unlimited; _(_)", 
-                "add", 
+                "x => x + _", 
+                "y => y", 
+                "1", 
                 "2", 
-                "3", 
-                "5", 
-                "7"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function add(a, b) { return _; }", 
-                "__tests(testMe(_, _), testMe(_, _), testMe(1, 2))", 
-                "repeat(_)", 
-                "a", 
-                "b", 
-                "addOne"
-            ], 
-            "defines": [
-                "function add(a, b) { return repeat(a, addOne)(b); }"
-            ], 
-            "fade": {}, 
-            "globals": {
-                "twice": "function twice(f) { return (x) => f(f(x)); }"
-            }, 
-            "goal": [
-                "3", 
-                "8", 
-                "9"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define a function that computes a plus b", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "add", 
-                "2", 
-                "3", 
-                "5", 
-                "7"
+                "x", 
+                "16"
             ]
         }
     ], 
@@ -370,15 +88,12 @@
         "C": "'triangle'", 
         "D": "'circle'"
     }, 
-    "password": "church", 
+    "password": "clone", 
     "resources": {
         "aliens": [
             "alien-bag-1", 
-            "alien-function-1", 
             "alien-bag-2", 
-            "alien-function-2", 
-            "alien-bag-3", 
-            "alien-function-3"
+            "alien-bag-3"
         ], 
         "curve": [
             {
