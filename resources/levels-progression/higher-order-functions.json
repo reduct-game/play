@@ -190,7 +190,7 @@
                 "5"
             ], 
             "syntax": [], 
-            "textgoal": "The repeat function let you use the same function many time!", 
+            "textgoal": "The repeat function lets you use the same function many times!", 
             "toolbox": [
                 "__unlimited; _(_)", 
                 "1", 
