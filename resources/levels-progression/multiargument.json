@@ -110,7 +110,7 @@
                 "x => y => y", 
                 "A", 
                 "B", 
-                "B", 
+                "D", 
                 "C"
             ], 
             "globals": {}, 
@@ -183,9 +183,7 @@
     "password": "curry", 
     "resources": {
         "aliens": [
-            "alien-function-1", 
-            "alien-function-2", 
-            "alien-function-3"
+            "alien-function-2"
         ], 
         "curve": [
             {

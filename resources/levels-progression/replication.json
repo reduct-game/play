@@ -15,7 +15,7 @@
             "syntax": [], 
             "textgoal": "Build your own function to create a {square}", 
             "toolbox": [
-                "A", 
+                "D", 
                 "B"
             ]
         }, 
@@ -245,8 +245,6 @@
     "password": "clone", 
     "resources": {
         "aliens": [
-            "alien-function-1", 
-            "alien-function-2", 
             "alien-function-3"
         ], 
         "curve": [
