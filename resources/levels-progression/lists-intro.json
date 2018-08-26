@@ -23,7 +23,8 @@
                 "C", 
                 "D", 
                 "9"
-            ]
+            ], 
+            "tutorialUrl": "resources/videos/array-intro.mp4"
         }, 
         {
             "animationScales": {}, 
