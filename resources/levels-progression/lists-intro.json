@@ -198,9 +198,9 @@
     "password": "clone", 
     "resources": {
         "aliens": [
-            "alien-bag-1", 
             "alien-bag-2", 
-            "alien-bag-3"
+            "alien-bag-3", 
+            "alien-bag-1"
         ], 
         "curve": [
             {
