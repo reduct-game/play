@@ -124,8 +124,8 @@
         "aliens": [
             "alien-function-1", 
             "alien-function-2", 
-            "alien-function-3",
-            "alien-boolean-2",
+            "alien-function-3", 
+            "alien-boolean-2", 
             "alien-boolean-4"
         ], 
         "curve": [
