@@ -6,53 +6,39 @@
         {
             "animationScales": {}, 
             "board": [
-                "function myRepeat(num, func, value){ return num == 1 ? _ : func(myRepeat(_, func));}", 
-                "_ - 1", 
+                "value", 
                 "num", 
                 "value", 
-                "value", 
-                "__tests(testMe(3,addOne, 3), testMe(3,addOne, 8), testMe(4,addOne,9))", 
-                "func"
+                "__autograder(0)", 
+                "__autograder(1)", 
+                "__autograder(2)", 
+                "function myRepeat(num,func,value) { return  ((num) == (0)) ? (_) : ((func)(myRepeat(_, func, _))); }", 
+                "func", 
+                "_ - 1"
             ], 
             "globals": {}, 
             "goal": [
+                "_", 
+                "_", 
+                "_"
+            ], 
+            "input": [
+                "(3, addOne, 3)", 
+                "(3, doNothing, 5)", 
+                "(4, addOne, 4)"
+            ], 
+            "output": [
                 "6", 
-                "11", 
-                "13"
+                "5", 
+                "8"
             ], 
             "syntax": [], 
-            "textgoal": "Define your own repeat!", 
+            "textgoal": "Define your own repeat", 
             "toolbox": [
-                "__unlimited; _(_)", 
-                "myRepeat", 
+                "addOne", 
+                "__unlimited;(_)(_)", 
+                "__unlimited;myRepeat", 
                 "1"
-            ]
-        }, 
-        {
-            "animationScales": {}, 
-            "board": [
-                "function myRepeat(num, func, value){ return _;}", 
-                "_ == _", 
-                "_ - _", 
-                "_ ? _ : _", 
-                "__tests(testMe(2, addOne, 6), testMe(3, addOne, 12), testMe(4, addOne, 22))", 
-                "myRepeat"
-            ], 
-            "globals": {}, 
-            "goal": [
-                "8", 
-                "15", 
-                "26"
-            ], 
-            "syntax": [], 
-            "textgoal": "Define your own repeat!", 
-            "toolbox": [
-                "__unlimited; _(_)", 
-                "__unlimited; myRepeat", 
-                "__unlimited; func", 
-                "__unlimited; 1", 
-                "__unlimited; num", 
-                "__unlimited; value"
             ]
         }
     ], 
