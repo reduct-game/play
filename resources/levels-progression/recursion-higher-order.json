@@ -40,6 +40,35 @@
                 "__unlimited;myRepeat", 
                 "1"
             ]
+        }, 
+        {
+            "animationScales": {}, 
+            "board": [
+                "function myRepeat(num, func, value){ return _;}", 
+                "_ == _", 
+                "_ - _", 
+                "_ ? _ : _", 
+                "__tests(testMe(2, addOne, 6), testMe(3, addOne, 12), testMe(4, addOne, 22))", 
+                "myRepeat"
+            ], 
+            "globals": {}, 
+            "goal": [
+                "8", 
+                "15", 
+                "26"
+            ], 
+            "input": [], 
+            "output": [], 
+            "syntax": [], 
+            "textgoal": "Define your own repeat!", 
+            "toolbox": [
+                "__unlimited; _(_)", 
+                "__unlimited; myRepeat", 
+                "__unlimited; func", 
+                "__unlimited; 1", 
+                "__unlimited; num", 
+                "__unlimited; value"
+            ]
         }
     ], 
     "macros": {
