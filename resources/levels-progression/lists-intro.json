@@ -9,7 +9,9 @@
                 "[_, _, _]"
             ], 
             "defines": [
-                "function get(a, i) { return 0;}"
+                "function get(a, i) { return 0;}", 
+                "function fold(f, a, init) { return 0;}", 
+                "function slice(array, begin, end) { return 0;}"
             ], 
             "globals": {}, 
             "goal": [
@@ -198,9 +200,9 @@
     "password": "clone", 
     "resources": {
         "aliens": [
-            "alien-bag-1", 
             "alien-bag-2", 
-            "alien-bag-3"
+            "alien-bag-3", 
+            "alien-bag-1"
         ], 
         "curve": [
             {

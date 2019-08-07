@@ -112,7 +112,9 @@
             "board": [
                 "function multiplyBySix(a) { return _; }", 
                 "__tests(testMe(2), testMe(3), testMe(5))", 
-                "_(0)"
+                "_(0)", 
+                "repeat", 
+                "add"
             ], 
             "defines": [
                 "function multiplyBySix(a) { return repeat(a, add(2), 0); }"
@@ -130,9 +132,9 @@
             "textgoal": "Using Repeat, define a function that multiplies a number by 6", 
             "toolbox": [
                 "__unlimited;_(_)", 
-                "repeat", 
+                "x => _", 
+                "x", 
                 "a", 
-                "add", 
                 "0", 
                 "5", 
                 "6", 
@@ -197,8 +199,9 @@
     ], 
     "resources": {
         "aliens": [
-            "alien-bag-1", 
             "alien-function-1", 
+            "alien-bag-1", 
+            "alien-conditional-1", 
             "alien-bag-2", 
             "alien-function-2", 
             "alien-bag-3", 

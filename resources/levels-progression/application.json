@@ -122,12 +122,11 @@
     "password": "aardvark", 
     "resources": {
         "aliens": [
-            "alien-bag-1", 
             "alien-function-1", 
-            "alien-bag-2", 
             "alien-function-2", 
-            "alien-bag-3", 
-            "alien-function-3"
+            "alien-function-3", 
+            "alien-boolean-2", 
+            "alien-boolean-4"
         ], 
         "curve": [
             {

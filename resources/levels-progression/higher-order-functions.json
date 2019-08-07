@@ -373,7 +373,6 @@
     "password": "church", 
     "resources": {
         "aliens": [
-            "alien-bag-1", 
             "alien-function-1", 
             "alien-bag-2", 
             "alien-function-2", 
