@@ -6,6 +6,9 @@
         {
             "animationScales": {}, 
             "board": [], 
+            "defines": [
+                "function fold(f, a, i) { return 0;}"
+            ], 
             "globals": {}, 
             "goal": [], 
             "syntax": [], 

@@ -9,7 +9,9 @@
                 "[_, _, _]"
             ], 
             "defines": [
-                "function get(a, i) { return 0;}"
+                "function get(a, i) { return 0;}", 
+                "function fold(f, a, init) { return 0;}", 
+                "function slice(array, begin, end) { return 0;}"
             ], 
             "globals": {}, 
             "goal": [
