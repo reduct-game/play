@@ -14,6 +14,8 @@
                 "true",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "toolbox": [
                 "tue",
@@ -33,6 +35,8 @@
                 "true",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if the x and y are the same weekday, otherwise false",
             "toolbox": [
@@ -57,6 +61,8 @@
                 "true",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Monday, otherwise false",
             "toolbox": [
@@ -70,15 +76,34 @@
             "animationScales": {},
             "board": [
                 "function isFriday(x) {return _; }",
-                "__tests(testMe(mon), testMe(fri))"
+                "__autograder(0)",
+                "__autograder(1)"
             ],
             "defines": [
                 "function isFriday(x) { return x == fri }"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_"
+            ],
+            "input": [
+                "mon",
+                "fri",
+                "tue",
+                "wed",
+                "thu",
+                "sat",
+                "sun"
+            ],
+            "output": [
                 "false",
-                "true"
+                "true",
+                "false",
+                "false",
+                "false",
+                "false",
+                "false"
             ],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Friday, otherwise false",
@@ -107,6 +132,8 @@
                 "false",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Monday or Friday, otherwise false",
             "toolbox": [
@@ -133,6 +160,8 @@
                 "false",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Monday or Friday, otherwise false",
             "toolbox": [
@@ -164,6 +193,8 @@
                 "false",
                 "true"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is the weekend, otherwise false",
             "toolbox": [
@@ -191,6 +222,8 @@
                 "true",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is one of the weekdays, otherwise false",
             "toolbox": [
@@ -218,6 +251,8 @@
                 "true",
                 "false"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is one of the weekdays, otherwise false",
             "toolbox": [
@@ -244,6 +279,8 @@
                 "tue",
                 "sun"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define the function tomorrow to compute the next day of any given day",
             "toolbox": [
@@ -266,6 +303,8 @@
                 "tue",
                 "sun"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Define the function yesterday to compute the previous day of any given day",
             "toolbox": [
@@ -295,6 +334,8 @@
                 "tue",
                 "tue"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "toolbox": [
                 "mon",
