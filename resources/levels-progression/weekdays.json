@@ -28,15 +28,30 @@
             "board": [
                 "function isSameDay(x, y) { return _; }",
                 "_ == _",
-                "__tests(testMe(sat, sat), testMe(mon, tue))"
+                "__autograder(0)",
+                "__autograder(1)"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_"
+            ],
+            "input": [
+                "(sat, sat)",
+                "(mon, tue)",
+                "(wed, wed)",
+                "(fri, mon)",
+                "(sun, sun)",
+                "(thu, wed)"
+            ],
+            "output": [
+                "true",
+                "false",
+                "true",
+                "false",
                 "true",
                 "false"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if the x and y are the same weekday, otherwise false",
             "toolbox": [
@@ -51,18 +66,35 @@
             "animationScales": {},
             "board": [
                 "function isMonday(x) {return _; }",
-                "__tests(testMe(mon), testMe(tue))"
+                "__autograder(0)",
+                "__autograder(1)"
             ],
             "defines": [
                 "function isMonday(x) { return x == mon }"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_"
+            ],
+            "input": [
+                "mon",
+                "tue",
+                "wed",
+                "thu",
+                "fri",
+                "sat",
+                "sun"
+            ],
+            "output": [
                 "true",
+                "false",
+                "false",
+                "false",
+                "false",
+                "false",
                 "false"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Monday, otherwise false",
             "toolbox": [
@@ -123,17 +155,34 @@
                 "function isMondayOrFriday(x) {return isMonday(_) ? true : _ ; }",
                 "x",
                 "isFriday(_)",
-                "__tests(testMe(mon), testMe(tue), testMe(fri), testMe(sun))"
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_",
+                "_"
+            ],
+            "input": [
+                "mon",
+                "tue",
+                "fri",
+                "wed",
+                "thu",
+                "sat",
+                "sun"
+            ],
+            "output": [
                 "true",
+                "false",
                 "true",
+                "false",
+                "false",
                 "false",
                 "false"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Monday or Friday, otherwise false",
             "toolbox": [
@@ -151,17 +200,34 @@
                 "function isMondayOrFriday(x) {return _; }",
                 "isFriday(_) ? _ : _",
                 "x",
-                "__tests(testMe(mon), testMe(tue), testMe(fri), testMe(sun))"
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_",
+                "_"
+            ],
+            "input": [
+                "mon",
+                "tue",
+                "fri",
+                "wed",
+                "thu",
+                "sat",
+                "sun"
+            ],
+            "output": [
                 "true",
+                "false",
                 "true",
+                "false",
+                "false",
                 "false",
                 "false"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is Monday or Friday, otherwise false",
             "toolbox": [
@@ -181,20 +247,37 @@
                 "function isWeekend(x) {return _; }",
                 "_ ? _ : _",
                 "x == _",
-                "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
             ],
             "defines": [
                 "function isWeekend(x) { return x == sat ? true : x == sun }"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_",
+                "_"
+            ],
+            "input": [
+                "sat",
+                "tue",
+                "sun",
+                "mon",
+                "wed",
+                "thu",
+                "fri"
+            ],
+            "output": [
+                "true",
+                "false",
                 "true",
                 "false",
                 "false",
-                "true"
+                "false",
+                "false"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is the weekend, otherwise false",
             "toolbox": [
@@ -213,17 +296,34 @@
             "animationScales": {},
             "board": [
                 "function isWeekday(x) {return isWeekend ? false : _; }",
-                "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_",
+                "_"
+            ],
+            "input": [
+                "sat",
+                "tue",
+                "sun",
+                "mon",
+                "wed",
+                "thu",
+                "fri"
+            ],
+            "output": [
+                "false",
+                "true",
                 "false",
                 "true",
                 "true",
-                "false"
+                "true",
+                "true"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is one of the weekdays, otherwise false",
             "toolbox": [
@@ -242,17 +342,34 @@
             "board": [
                 "function isWeekday(x) {return _; }",
                 "_ ? _ : _",
-                "__tests(testMe(sat), testMe(tue), testMe(mon), testMe(sun))"
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
             ],
             "globals": {},
             "goal": [
+                "_",
+                "_",
+                "_"
+            ],
+            "input": [
+                "sat",
+                "tue",
+                "sun",
+                "mon",
+                "wed",
+                "thu",
+                "fri"
+            ],
+            "output": [
+                "false",
+                "true",
                 "false",
                 "true",
                 "true",
-                "false"
+                "true",
+                "true"
             ],
-            "input": [],
-            "output": [],
             "syntax": [],
             "textgoal": "Define a function that outputs true if x is one of the weekdays, otherwise false",
             "toolbox": [
