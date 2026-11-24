@@ -1,46 +1,80 @@
 #!/bin/bash
+# Build the game from a reduct-redux checkout and copy the result here.
+# Afterwards, review with git status, then commit and push to the
+# branch GitHub Pages serves.
 
-source="reduct-redux"
+set -e
 
-for d in "../reduct-redux" "$HOME/reduct-redux"
+cd "$(dirname "$0")"
+site="$(pwd)"
+
+source=""
+for d in "reduct-redux" ".." "../reduct-redux" "$HOME/reduct-redux"
 do
-    if [[ ! -d "$source/.git" ]]
+    if [[ -z "$source" && -d "$d/.git" && -f "$d/package.json" ]]
     then
-        source="$d"
+        source="$(cd "$d" && pwd)"
     fi
 done
 
-if [[ ! -d "$source/.git" ]]
+if [[ -z "$source" ]]
 then
   echo "Can't find reduct-redux directory to read from"
   exit 1
 fi
 
-echo "Building from $source"
+# The Parcel 1 build needs Node 22 (see .nvmrc in reduct-redux).
+if [[ "$(node --version 2>/dev/null)" != v22.* ]]
+then
+    for d in /opt/homebrew/opt/node@22/bin /usr/local/opt/node@22/bin
+    do
+        if [[ -x "$d/node" ]]
+        then
+            export PATH="$d:$PATH"
+            break
+        fi
+    done
+fi
+if [[ "$(node --version 2>/dev/null)" != v22.* ]]
+then
+    echo "Node 22 is required to build; found $(node --version 2>&1 | head -1)"
+    exit 1
+fi
+
+echo "Building from $source ($(cd "$source" && git rev-parse --abbrev-ref HEAD) $(cd "$source" && git rev-parse --short HEAD))"
+if [[ -n "$(cd "$source" && git status --porcelain --untracked-files=no)" ]]
+then
+    echo "Warning: $source has uncommitted changes, which will be included."
+fi
 
 (
     cd "$source"
 
+    # Regenerate level JSON from the CSV sources.
     (cd chapterutil; make)
 
     rm -rf dist .cache
-    if [[ ! -d dist ]]
-    then
-        mkdir dist
-    fi
+    mkdir dist
 
-    if [[ -x `which yarn` ]]
+    if [[ -x "$(command -v yarn)" ]]
     then
         yarn dist
-    elif [[ -x `which npm` ]]
-    then
-        npm run dist
     else
-        echo "Can't find yarn or npm"
+        npm run dist
     fi
 
-    ln -s ../resources dist/resources
+    if [[ ! -e dist/resources ]]
+    then
+        ln -s ../resources dist/resources
+    fi
 )
 
-rsync -Lr ${source}/dist/ ./
-echo "Use git add/git commit/git push to push updates"
+# Replace the old build, keeping this repository's own files.
+rsync -rL --delete --checksum \
+    --exclude .git --exclude .gitignore --exclude .gitmodules \
+    --exclude _config.yml --exclude .nojekyll --exclude CNAME \
+    --exclude README.md --exclude LICENSE --exclude shipit \
+    --exclude '*.swp' --exclude .DS_Store --exclude reduct-redux \
+    "${source}/dist/" "$site/"
+
+echo "Built $(cd "$source" && git rev-parse --short HEAD). Review with git status, then commit and push."

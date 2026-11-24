@@ -1,108 +1,108 @@
 {
-    "challenge": true, 
-    "chapterName": "Functions Challenge Levels", 
-    "description": "Challenge levels for functions", 
-    "language": "JavaScript", 
+    "challenge": true,
+    "chapterName": "Functions Challenge Levels",
+    "description": "Challenge levels for functions",
+    "language": "JavaScript",
     "levels": [
         {
-            "animationScales": {}, 
+            "animationScales": {},
             "board": [
-                "x => xx", 
-                "x => C", 
+                "x => xx",
+                "x => C",
                 "A"
-            ], 
-            "globals": {}, 
+            ],
+            "globals": {},
             "goal": [
-                "B", 
+                "B",
                 "C"
-            ], 
-            "syntax": [], 
-            "textgoal": "Create {a square} and {a triangle}", 
+            ],
+            "syntax": [],
+            "textgoal": "Create {a square} and {a triangle}",
             "toolbox": [
                 "B"
             ]
-        }, 
+        },
         {
-            "animationScales": {}, 
+            "animationScales": {},
             "board": [
-                "x => y => _", 
-                "y => x => _", 
-                "A", 
-                "A", 
-                "B", 
-                "C", 
+                "x => y => _",
+                "y => x => _",
+                "A",
+                "A",
+                "B",
+                "C",
                 "C"
-            ], 
-            "globals": {}, 
+            ],
+            "globals": {},
             "goal": [
-                "A", 
+                "A",
                 "B"
-            ], 
-            "syntax": [], 
-            "textgoal": "Create {a star} and {a square}", 
+            ],
+            "syntax": [],
+            "textgoal": "Create {a star} and {a square}",
             "toolbox": [
-                "x", 
+                "x",
                 "y"
             ]
-        }, 
+        },
         {
-            "animationScales": {}, 
+            "animationScales": {},
             "board": [
-                "(x) => (y) => _", 
+                "(x) => (y) => _",
                 "x => xx"
-            ], 
-            "globals": {}, 
+            ],
+            "globals": {},
             "goal": [
                 "15"
-            ], 
-            "syntax": [], 
+            ],
+            "syntax": [],
             "toolbox": [
-                "_ + _", 
-                "x", 
-                "y", 
-                "1", 
-                "3", 
-                "5", 
+                "_ + _",
+                "x",
+                "y",
+                "1",
+                "3",
+                "5",
                 "7"
             ]
-        }, 
+        },
         {
-            "animationScales": {}, 
+            "animationScales": {},
             "board": [
-                "x => xxx", 
+                "x => xxx",
                 "(x) => (y) => _ + _"
-            ], 
-            "globals": {}, 
+            ],
+            "globals": {},
             "goal": [
                 "16"
-            ], 
-            "syntax": [], 
+            ],
+            "syntax": [],
             "toolbox": [
-                "x", 
-                "x", 
-                "y", 
-                "y", 
-                "0", 
-                "0", 
-                "1", 
-                "1", 
-                "2", 
+                "x",
+                "x",
+                "y",
+                "y",
+                "0",
+                "0",
+                "1",
+                "1",
+                "2",
                 "3"
             ]
         }
-    ], 
+    ],
     "macros": {
-        "A": "'star'", 
-        "B": "'rect'", 
-        "C": "'triangle'", 
+        "A": "'star'",
+        "B": "'rect'",
+        "C": "'triangle'",
         "D": "'circle'"
-    }, 
+    },
     "resources": {
         "aliens": [
-            "alien-function-1", 
-            "alien-function-2", 
+            "alien-function-1",
+            "alien-function-2",
             "alien-function-3"
-        ], 
+        ],
         "planet": "planet-functiana"
     }
 }
