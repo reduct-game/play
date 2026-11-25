@@ -18,6 +18,8 @@
             "goal": [
                 "[A, B, C]"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Make a list with three elements",
             "toolbox": [
@@ -26,8 +28,7 @@
                 "C",
                 "D",
                 "9"
-            ],
-            "tutorialUrl": "resources/videos/array-intro.mp4"
+            ]
         },
         {
             "animationScales": {},
@@ -43,6 +44,8 @@
             "goal": [
                 "C"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "\"get\" can get an element from a list",
             "toolbox": [
@@ -63,6 +66,8 @@
             "goal": [
                 "[2, 4, 5]"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "\"map\" applies a function to every element",
             "toolbox": [
@@ -82,6 +87,8 @@
             "goal": [
                 "[2, 4, 8, 16]"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "toolbox": [
                 "x => x + _",
@@ -100,6 +107,8 @@
                 "3",
                 "0"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "\"length\" gives the number of elements",
             "toolbox": [
@@ -123,6 +132,8 @@
             "goal": [
                 "[1, 0, 2]"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "A list can hold other lists",
             "toolbox": [
@@ -140,6 +151,8 @@
             "goal": [
                 "[4,3,2,1]"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "\"concat\" glues lists together",
             "toolbox": [
@@ -160,6 +173,8 @@
             "goal": [
                 "C"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "toolbox": [
                 "__unlimited; concat",
@@ -180,6 +195,8 @@
             "goal": [
                 "[true, false, true, false]"
             ],
+            "input": [],
+            "output": [],
             "syntax": [],
             "textgoal": "Make a function that sees if a number is 1",
             "toolbox": [
@@ -189,6 +206,49 @@
                 "2",
                 "true",
                 "a"
+            ]
+        },
+        {
+            "animationScales": {},
+            "board": [
+                "function last(a) { return _; }",
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
+            ],
+            "globals": {},
+            "goal": [
+                "_",
+                "_",
+                "_"
+            ],
+            "input": [
+                "[1, 2, 3]",
+                "[A, B]",
+                "[C]",
+                "[4, 9, 4, 1]",
+                "[D, D, A]",
+                "[[A], [B, C]]"
+            ],
+            "output": [
+                "3",
+                "B",
+                "C",
+                "1",
+                "A",
+                "[B, C]"
+            ],
+            "syntax": [],
+            "textgoal": "Define a function that gives the last element of a list",
+            "toolbox": [
+                "get",
+                "length",
+                "_ - _",
+                "0",
+                "1",
+                "a",
+                "a",
+                "__unlimited; last;"
             ]
         }
     ],

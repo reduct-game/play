@@ -13,6 +13,7 @@
             "goal": [
                 "A"
             ],
+            "input": [],
             "output": [],
             "syntax": [],
             "textgoal": "Just as a reminder, \"get\" gets an item from a list. Hint: the list starts at position 0. ",
@@ -28,13 +29,11 @@
                 "function first(a) {return get(a,0);}",
                 "[A, B, C]"
             ],
-            "defines": [
-                "function first(a) {return get(a,0);}"
-            ],
             "globals": {},
             "goal": [
                 "A"
             ],
+            "input": [],
             "output": [],
             "syntax": [],
             "textgoal": "First allows you to get the first item in a list. ",
@@ -48,10 +47,14 @@
                 "function first(a) {return _}",
                 "[B, A, A]"
             ],
+            "defines": [
+                "function first(a) {return get(a,0);}"
+            ],
             "globals": {},
             "goal": [
                 "B"
             ],
+            "input": [],
             "output": [],
             "syntax": [],
             "textgoal": "Can you get the first item from this list? ",
@@ -66,16 +69,14 @@
         {
             "animationScales": {},
             "board": [
-                "function remove_first(a) {return length(a) < 2 ? []: slice(a, 1, length(a))}",
+                "function remove_first(a) {return length(a) == 0 ? []: slice(a, 1, length(a))}",
                 "[A, A, B, A]"
-            ],
-            "defines": [
-                "function remove_first(a) {return length(a) < 2 ? []: slice(a, 1, length(a))}"
             ],
             "globals": {},
             "goal": [
                 "[A, B, A]"
             ],
+            "input": [],
             "output": [],
             "syntax": [],
             "textgoal": "Remove_first allows you to remove the first item in a list. ",
@@ -86,50 +87,44 @@
         {
             "animationScales": {},
             "board": [
-                "function remove_first(a) {return _ < _ ? _: slice(a, 1, length(a))}",
-                "[A]"
+                "function remove_first(a) {return _ == _ ? _: _}",
+                "__autograder(0)",
+                "__autograder(1)",
+                "__autograder(2)"
+            ],
+            "defines": [
+                "function remove_first(a) {return length(a) == 0 ? []: slice(a, 1, length(a))}"
             ],
             "globals": {},
             "goal": [
-                "[]"
+                "_",
+                "_",
+                "_"
             ],
-            "output": [],
+            "input": [
+                "[A, B]",
+                "[]",
+                "[C]",
+                "[A, B, C, D]",
+                "[B, B]"
+            ],
+            "output": [
+                "[B]",
+                "[]",
+                "[]",
+                "[B, C, D]",
+                "[B]"
+            ],
             "syntax": [],
-            "textgoal": "What happens when the list only has one item in it? Hint: length allows you to find the length of a list and slice cuts up a list. ",
+            "textgoal": "Define remove_first. It should also work on an empty list. Hint: length gives the length of a list and slice cuts up a list.",
             "toolbox": [
-                "remove_first",
                 "length(a)",
-                "slice(a, 1, length(a)",
+                "slice(a, _, length(a))",
                 "0",
                 "1",
-                "2",
                 "[]",
                 "a",
-                "A"
-            ]
-        },
-        {
-            "animationScales": {},
-            "board": [
-                "function remove_first(a) {return length(a) < 2 ? []: _}",
-                "[A, B, B, A]"
-            ],
-            "globals": {},
-            "goal": [
-                "[B, B, A]"
-            ],
-            "output": [],
-            "syntax": [],
-            "textgoal": "What happens in a normal list? ",
-            "toolbox": [
-                "remove_first",
-                "length(a)",
-                "slice(a, 1, length(a)",
-                "a",
-                "0",
-                "1",
-                "a",
-                "2"
+                "__unlimited; remove_first;"
             ]
         }
     ],

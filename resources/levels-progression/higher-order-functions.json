@@ -307,9 +307,6 @@
                 "a",
                 "b"
             ],
-            "defines": [
-                "function add(a, b) { return repeat(a, addOne)(b); }"
-            ],
             "fade": {},
             "globals": {
                 "twice": "function twice(f) { return (x) => f(f(x)); }"
