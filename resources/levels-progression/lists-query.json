@@ -1,6 +1,6 @@
 {
-    "chapterName": "Arrays",
-    "description": "Arrays can hold many things.",
+    "chapterName": "Lists",
+    "description": "Lists can hold many things.",
     "language": "JavaScript",
     "levels": [
         {

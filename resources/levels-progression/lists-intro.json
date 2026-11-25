@@ -1,6 +1,6 @@
 {
-    "chapterName": "Arrays",
-    "description": "Arrays can hold many things.",
+    "chapterName": "Lists",
+    "description": "Lists can hold many things.",
     "language": "JavaScript",
     "levels": [
         {
@@ -19,7 +19,7 @@
                 "[A, B, C]"
             ],
             "syntax": [],
-            "textgoal": "Make an array with three elements",
+            "textgoal": "Make a list with three elements",
             "toolbox": [
                 "A",
                 "B",
@@ -44,7 +44,7 @@
                 "C"
             ],
             "syntax": [],
-            "textgoal": "\"get\" can get an element from an array",
+            "textgoal": "\"get\" can get an element from a list",
             "toolbox": [
                 "0",
                 "1",
@@ -124,7 +124,7 @@
                 "[1, 0, 2]"
             ],
             "syntax": [],
-            "textgoal": "An array can hold other arrays",
+            "textgoal": "A list can hold other lists",
             "toolbox": [
                 "0",
                 "[A, B]",
@@ -141,7 +141,7 @@
                 "[4,3,2,1]"
             ],
             "syntax": [],
-            "textgoal": "\"concat\" glues arrays together",
+            "textgoal": "\"concat\" glues lists together",
             "toolbox": [
                 "__unlimited; concat",
                 "[4]",

@@ -95,7 +95,7 @@
             ],
             "output": [],
             "syntax": [],
-            "textgoal": "What happens when the list only has one item in it? Hint: length allows you to find the length of a list and slice cuts up an array. ",
+            "textgoal": "What happens when the list only has one item in it? Hint: length allows you to find the length of a list and slice cuts up a list. ",
             "toolbox": [
                 "remove_first",
                 "length(a)",

@@ -296,7 +296,7 @@
             ],
             "output": [],
             "syntax": [],
-            "textgoal": "Just as a reminder, concat glues two arrays together. ",
+            "textgoal": "Just as a reminder, concat glues two lists together. ",
             "toolbox": [
                 "[A]",
                 "[B, A]"

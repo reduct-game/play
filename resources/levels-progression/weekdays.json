@@ -197,53 +197,6 @@
         {
             "animationScales": {},
             "board": [
-                "function isMondayOrFriday(x) {return _; }",
-                "isFriday(_) ? _ : _",
-                "x",
-                "__autograder(0)",
-                "__autograder(1)",
-                "__autograder(2)"
-            ],
-            "globals": {},
-            "goal": [
-                "_",
-                "_",
-                "_"
-            ],
-            "input": [
-                "mon",
-                "tue",
-                "fri",
-                "wed",
-                "thu",
-                "sat",
-                "sun"
-            ],
-            "output": [
-                "true",
-                "false",
-                "true",
-                "false",
-                "false",
-                "false",
-                "false"
-            ],
-            "syntax": [],
-            "textgoal": "Define a function that outputs true if x is Monday or Friday, otherwise false",
-            "toolbox": [
-                "isMonday",
-                "isFriday",
-                "mon",
-                "tue",
-                "true",
-                "false",
-                "x",
-                "__unlimited; isMondayOrFriday;"
-            ]
-        },
-        {
-            "animationScales": {},
-            "board": [
                 "function isWeekend(x) {return _; }",
                 "_ ? _ : _",
                 "x == _",
